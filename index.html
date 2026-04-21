@@ -1,35 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
-</head>
-<body style="font-family: Arial; background-color: lightblue;">
+    <title>Menu</title>
 
-<header style="background-color: lightyellow; color: white; padding: 10px;">
-    <h1>My Website</h1>
+    <style>
+        * {
+            font-family: Arial;
+        }
+
+        #logo {
+            text-align: center;
+            color: blue;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .offer {
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: hsl(200,50%,50%);
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 id="logo">Our Menu</h1>
 </header>
 
-<nav style="background-color: black; padding: 10px;">
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="services.html">Services</a> |
-    <a href="contact.html">Contact</a>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+    </ul>
 </nav>
 
-<main style="padding: 20px;">
-    <h2>Welcome</h2>
-    <p>my beauty salon.</p>
+<main>
 
-    <h3>beauty </h3>
-    <ul>
-        <li>Hair styling</li>
-        <li>Ficials</li>
-        <li>makeup</li>
-    </ul>
+    <h2>Top 3 Best Sellers</h2>
+    <!-- Ordered List -->
+    <ol>
+        <li>chocolate cake</li>
+        <li>ice cream</li>
+        <li>Fruit Tart</li>
+    </ol>
+
+    <h2>Menu Items</h2>
+    <!-- Description List -->
+    <dl>
+        <dt>chocolate cake</dt>
+        <dd>Rich dark chocolate flavor</dd>
+
+        <dt>ice cream </dt>
+        <dd>vanilla , chocolate & strawberry options</dd>
+
+        <dt>Fruit Tart</dt>
+        <dd>Fresh fruits with Creamy base</dd>
+    </dl>
+
+    <div class="offer">
+        <p>Special discount today!</p>
+    </div>
+
 </main>
 
-<footer style="background-color: black; color: white; text-align: center;">
-    <p>© 2026 My Website</p>
+<footer>
+    <p>© 2026 My Restaurant</p>
 </footer>
 
 </body>
